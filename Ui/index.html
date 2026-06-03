@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acoustic Localization System</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Microphone Status</h2>
+      <div id="source-status" class="source-status">Source: Waiting for detection...</div>
+      <ul id="mic-status-list" class="status-list"></ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>Acoustic Localization System</h1>
+        <button id="focus-site-btn" class="focus-btn" type="button">Focus on Site</button>
+      </header>
+      <section id="map" class="map-container"></section>
+    </main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="./script.js"></script>
+</body>
+</html>
